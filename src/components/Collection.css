@@ -1,0 +1,49 @@
+.collections-section{
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+.section-title{
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.collection-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.collection-card{
+    background-color: #222222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.collection-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.collection-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.collection-card:hover .collection-image{
+    transform: scale(1.05);
+}
+.card-contect{
+    padding: 25px;
+    text-align: left;
+}
+.card-content h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.card-content p{
+    font-size: 16px;
+    color: #aaaaaa;
+}

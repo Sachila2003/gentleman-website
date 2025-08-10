@@ -1,0 +1,18 @@
+/* src/index.css */
+
+/* Google Fonts වලින් ලස්සන font එකක් ගමු. 'Montserrat' කියන්නේ professional look එකට නියමයි. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Default browser styles අයින් කරලා, අපේ styles වලට ලේසි කරගන්න */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; /* අපි import කරපු font එක apply කරනවා */
+  background-color: #111111; /* තද කළු background එක */
+  color: #ffffff; /* Default අකුරු වල පාට සුදු කරනවා */
+  overflow-x: hidden; /* ngang Horizontal scroll bar එන එක නවත්තනවා */
+}

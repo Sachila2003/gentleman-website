@@ -1,0 +1,57 @@
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logo-container .logo-name{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.logo-container .tagline{
+    font-size: 12px;
+    color: #aaaaaa;
+    letter-spacing: 1px;
+}
+.main-navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+.main-navigation ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: color 0.3s ease,baclground-color 0.3s ease;
+}
+.main-navigation ul li a:hover{
+    color: #e63946;
+}
+.main-navigation ul li a.active{
+    background-color: #333333;
+    color: #e63946;
+    border-radius: 5px;
+}
+
+/* ============== Media Queries for Responsiveness ============== */
+
+@media (max-width: 768px) {
+    .site-header {
+      flex-direction: column; 
+      padding: 20px;
+    }
+    .logo-container {
+      margin-bottom: 20px; 
+    }
+    .main-navigation ul {
+      flex-direction: column; 
+      gap: 10px; 
+    }
+    .main-navigation ul li a {
+      display: block;
+      text-align: center;
+    }
+  }
