@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import { motion } from 'framer-motion'; 
+import { FaUserCog } from 'react-icons/fa';
 
 function Header() {
-  return (
+  return (  
     <motion.header
       className="site-header"
       // Animation properties 
@@ -17,12 +19,17 @@ function Header() {
       </div>
       <nav className="main-navigation">
         <ul>
-            <li><a href="#" className="active">HOME</a></li>
-            <li><a href="#collections">COLLECTIONS</a></li>
-            <li><a href="#">SPECIAL OFFERS</a></li>
-            <li><a href="#">HOW IT WORKS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><Link to="/" className="active">HOME</Link></li>
+            <li><Link to="/collections">COLLECTIONS</Link></li>
+            <li><Link to="#">SPECIAL OFFERS</Link></li>
+            <li><Link to="#">HOW IT WORKS</Link></li>
+            <li><Link to="#">ABOUT</Link></li>
+            <li><Link to="#">CONTACT</Link></li>
+            <li className="admin-icon-link">
+              <Link to="/admin">
+                <FaUserCog />
+              </Link>
+            </li>
         </ul>
       </nav>
       <div className="search-container">

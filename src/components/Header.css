@@ -35,6 +35,23 @@
     color: #e63946;
     border-radius: 5px;
 }
+.main-navigation ul .admin-icon-link a {
+  font-size: 24px; /* Icon එකේ ප්‍රමාණය ටිකක් ලොකු කරනවා */
+  color: #ffffff;    /* Icon එකේ පාට (සුදු) */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 0 15px; /* අනිත් links වගේම padding එකක් දානවා */
+}
+
+.main-navigation ul .admin-icon-link a:hover {
+  color: #e63946; /* Hover කරනකොට පාට වෙනස් කරනවා */
+}
+
+/* Optional: අනිත් active link එක වගේම style කරන්න ඕන නම් */
+.main-navigation ul .admin-icon-link a.active {
+  color: #e63946;
+}
 
 /* ============== Media Queries for Responsiveness ============== */
 
